@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+    <section class="container">
+        <form class="form">
+                <h1>SIGN-UP</h1>
+    
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span class="s-re">or use email for registeration</span>
+                <div class="camp">
+                    <input class="input" placeholder="Username">
+                    <input class="input" placeholder="Email">
+                    <input class="input" placeholder="Password" id="password" type="password">
+                    <input class="input" placeholder="Confirm Password" id="confirmPassword" type="password">
+                </div>
+                
+                <p id="errorMessage" class="error"></p>
+                <p id="successMessage" class="success">Registro concluído com sucesso!</p>
+
+                <button class="btn" id="btn-register" onclick="validateForm()" type="button">Register</button>
+            </form>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
